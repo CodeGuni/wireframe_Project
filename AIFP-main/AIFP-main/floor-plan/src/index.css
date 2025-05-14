@@ -1,0 +1,58 @@
+@import '@radix-ui/themes/styles.css';
+
+/* Optional: If you want to override the theme values */
+.radix-themes {
+  --default-font-family: 'Your preferred font', system-ui;
+}
+
+/* Your other CSS styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Any custom CSS */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection for specific elements */
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-draw {
+  cursor: crosshair;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.cursor-select {
+  cursor: pointer;
+}
+
+.cursor-wall {
+  cursor: crosshair;
+}

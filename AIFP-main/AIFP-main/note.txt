@@ -1,0 +1,65 @@
+src/
+├── components/
+│   ├── canvas/
+│   │   ├── MainCanvas.tsx               # Main canvas component
+│   │   ├── GridLayer.tsx                # Grid layer component
+│   │   ├── DrawingLayer.tsx             # Drawing layer component
+│   │   └── ShapeRenderer.tsx            # Shape rendering component
+│   │
+│   └── ui/
+│       ├── Cursor.tsx                   # Cursor component
+│       ├── Toolbar.tsx                  # Toolbar component
+│       └── PropertyPanel.tsx            # Property panel component
+│
+├── core/
+│   ├── shapes/
+│   │   ├── base/
+│   │   │   ├── BaseShape.ts             # Abstract base shape class
+│   │   │   └── IShape.ts                # Shape interface
+│   │   │
+│   │   ├── implementations/
+│   │   │   ├── Wall.ts                  # Wall shape implementation
+│   │   │   ├── TextShape.ts             # Text shape implementation
+│   │   │   └── Circle.ts                # Circle shape implementation
+│   │   │
+│   │   └── index.ts                     # Shape exports
+│   │
+│   ├── strategies/
+│   │   ├── render/
+│   │   │   ├── IRenderStrategy.ts       # Render strategy interface
+│   │   │   ├── WallRenderStrategy.ts    # Wall rendering strategy
+│   │   │   └── TextRenderStrategy.ts    # Text rendering strategy
+│   │   │
+│   │   ├── selection/
+│   │   │   ├── ISelectionStrategy.ts    # Selection strategy interface
+│   │   │   ├── WallSelectionStrategy.ts # Wall selection strategy
+│   │   │   └── TextSelectionStrategy.ts # Text selection strategy
+│   │   │
+│   │   └── index.ts                     # Strategy exports
+│   │
+│   ├── factory/
+│   │   ├── ShapeFactory.ts              # Shape factory implementation
+│   │   └── IShapeFactory.ts             # Factory interface
+│   │
+│   └── managers/
+│       ├── ShapeManager.ts              # Shape management
+│       └── StateManager.ts              # Application state management
+│
+├── utils/
+│   ├── coordinates.ts                   # Coordinate transformation utilities
+│   ├── math.ts                          # Math helper functions
+│   └── transform.ts                     # Shape transformation utilities
+│
+├── types/
+│   ├── shapes.ts                        # Shape-related types
+│   ├── viewport.ts                      # Viewport-related types
+│   └── index.ts                         # Type exports
+│
+├── constants/
+│   ├── shapes.ts                        # Shape-related constants
+│   └── tools.ts                         # Tool-related constants
+│
+└── hooks/
+    ├── useShapeSelection.ts             # Shape selection hook
+    ├── useShapeTransform.ts             # Shape transformation hook
+    └── useCanvasInteraction.ts          # Canvas interaction hook

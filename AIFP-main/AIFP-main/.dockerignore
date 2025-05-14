@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.devcontainer
+*.log
+*.tmp
+*.tar
+.DS_Store
+package-lock.json

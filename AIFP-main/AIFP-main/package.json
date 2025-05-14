@@ -1,0 +1,13 @@
+{
+    "name": "AIFP",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
